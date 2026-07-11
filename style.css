@@ -265,3 +265,233 @@ section .button:hover {
     line-height: 1.5;
 }
 
+/* Pricing section */
+.pricing-section {
+    width: 100%;
+    padding: 80px 24px 100px;
+    background-color: #ffffff;
+}
+
+/* Main pricing container */
+.pricing-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Pricing heading area */
+.pricing-header {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.pricing-title {
+    margin-bottom: 12px;
+
+    color: #0f1e2e;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.pricing-header p {
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Pricing cards container */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 24px;
+}
+
+/* Individual pricing card */
+.pricing-card {
+    min-height: 440px;
+    padding: 30px 28px 26px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Card hover */
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(13, 29, 48, 0.12);
+}
+
+/* Highlight the Pro card */
+.pricing-card:nth-child(2) {
+    background-color: #0d1d2d;
+    border-color: #0d1d2d;
+    color: #ffffff;
+
+    box-shadow: 0 12px 28px rgba(13, 29, 48, 0.18);
+}
+
+/* Pricing card top area */
+.pricing-card-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3e7eb;
+}
+
+.pricing-card:nth-child(2) .pricing-card-header {
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Plan name */
+.pricing-plan {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #737373;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.pricing-card:nth-child(2) .pricing-plan {
+    color: #93c5fd;
+}
+
+/* Price */
+.pricing-price {
+    margin-bottom: 2px;
+
+    color: #0d1d2d;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.pricing-card:nth-child(2) .pricing-price {
+    color: #ffffff;
+}
+
+/* Price description */
+.pricing-person {
+    color: #8a8a8a;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.pricing-card:nth-child(2) .pricing-person {
+    color: #aeb9c5;
+}
+
+/* Feature list */
+.pricing-features {
+    margin-bottom: 24px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    list-style: none;
+}
+
+/* Individual feature */
+.pricing-features li {
+    position: relative;
+    padding-left: 18px;
+
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.pricing-features li::before {
+    content: "•";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #2563eb;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.pricing-card:nth-child(2) .pricing-features li {
+    color: #d0d7df;
+}
+
+.pricing-card:nth-child(2) .pricing-features li::before {
+    color: #60a5fa;
+}
+
+/* Pricing buttons */
+.pricing-button {
+    width: 100%;
+    min-height: 42px;
+    margin-top: auto;
+    padding: 10px 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    background-color: transparent;
+    border: 1px solid #2563eb;
+    border-radius: 7px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Standard button hover */
+.pricing-button:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Pro button */
+.pricing-card:nth-child(2) .pricing-button {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.pricing-card:nth-child(2) .pricing-button:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+/* Team button */
+.pricing-card:nth-child(3) {
+    background-color: #f8f9fb;
+}
+
+.pricing-card:nth-child(3) .pricing-button {
+    color: #172033;
+    border-color: #172033;
+}
+
+.pricing-card:nth-child(3) .pricing-button:hover {
+    background-color: #172033;
+    color: #ffffff;
+}
